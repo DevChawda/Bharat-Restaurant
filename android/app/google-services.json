@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199531564704",
+    "project_id": "bharat-app-3d928",
+    "storage_bucket": "bharat-app-3d928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199531564704:android:21c6cb6b3a1b262ae543c5",
+        "android_client_info": {
+          "package_name": "com.bharatapp.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX1uzmgx-6Rdu6wRIWGx7B_xSZB6ntkvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
