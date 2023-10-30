@@ -48,13 +48,11 @@ class ThemeHelper {
       visualDensity: VisualDensity.standard,
       colorScheme: colorScheme,
       textTheme: TextThemes.textTheme(colorScheme),
-      scaffoldBackgroundColor: appTheme.whiteA700,
+      scaffoldBackgroundColor: colorScheme.onPrimary,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+          disabledBackgroundColor: appTheme.blueGray100,
           backgroundColor: colorScheme.primary,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(28.h),
-          ),
           visualDensity: const VisualDensity(
             vertical: -4,
             horizontal: -4,
@@ -62,26 +60,10 @@ class ThemeHelper {
           padding: EdgeInsets.zero,
         ),
       ),
-      checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateColor.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
-            return colorScheme.primary;
-          }
-          return colorScheme.onSurface;
-        }),
-        side: BorderSide(
-          color: appTheme.gray300,
-          width: 1,
-        ),
-        visualDensity: const VisualDensity(
-          vertical: -4,
-          horizontal: -4,
-        ),
-      ),
       dividerTheme: DividerThemeData(
         thickness: 1,
         space: 1,
-        color: appTheme.gray300,
+        color: appTheme.black900,
       ),
     );
   }
@@ -103,46 +85,34 @@ class TextThemes {
           fontWeight: FontWeight.w400,
         ),
         bodyMedium: TextStyle(
-          color: appTheme.blueGray400,
-          fontSize: 14.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w400,
-        ),
-        bodySmall: TextStyle(
-          color: appTheme.blueGray400,
-          fontSize: 12.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w400,
-        ),
-        displayMedium: TextStyle(
-          color: appTheme.whiteA700,
-          fontSize: 42.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w400,
-        ),
-        headlineMedium: TextStyle(
           color: appTheme.black900,
-          fontSize: 28.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w600,
+          fontSize: 15.fSize,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w400,
+        ),
+        headlineLarge: TextStyle(
+          color: colorScheme.onPrimary,
+          fontSize: 32.fSize,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w800,
+        ),
+        headlineSmall: TextStyle(
+          color: appTheme.black900,
+          fontSize: 24.fSize,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w300,
         ),
         titleLarge: TextStyle(
-          color: colorScheme.onPrimary,
+          color: appTheme.black900,
           fontSize: 20.fSize,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.w600,
-        ),
-        titleMedium: TextStyle(
-          color: colorScheme.onPrimary,
-          fontSize: 16.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w800,
         ),
         titleSmall: TextStyle(
-          color: appTheme.whiteA700,
+          color: appTheme.black900,
           fontSize: 14.fSize,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.w600,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w500,
         ),
       );
 }
@@ -151,50 +121,50 @@ class TextThemes {
 class ColorSchemes {
   static final primaryColorScheme = ColorScheme.light(
     // Primary colors
-    primary: Color(0XFFF54749),
-    primaryContainer: Color(0XFF232323),
-    secondary: Color(0XFF232323),
-    secondaryContainer: Color(0XFF7F859A),
-    tertiary: Color(0XFF232323),
-    tertiaryContainer: Color(0XFF7F859A),
+    primary: Color(0XFF0B5992),
+    primaryContainer: Color(0XFFFFFFFF),
+    secondary: Color(0XFFFFFFFF),
+    secondaryContainer: Color(0XFF0B5992),
+    tertiary: Color(0XFFFFFFFF),
+    tertiaryContainer: Color(0XFF0B5992),
 
     // Background colors
-    background: Color(0XFF232323),
+    background: Color(0XFFFFFFFF),
 
     // Surface colors
-    surface: Color(0XFF232323),
-    surfaceTint: Color(0XFF232323),
-    surfaceVariant: Color(0XFF7F859A),
+    surface: Color(0XFFFFFFFF),
+    surfaceTint: Color(0XFFFFFFFF),
+    surfaceVariant: Color(0XFF0B5992),
 
     // Error colors
-    error: Color(0XFF232323),
-    errorContainer: Color(0XFF7F859A),
-    onError: Color(0XFFFFD205),
-    onErrorContainer: Color(0XFF232323),
+    error: Color(0XFFFFFFFF),
+    errorContainer: Color(0XFF0B5992),
+    onError: Color(0XFF0B5992),
+    onErrorContainer: Color(0XFFFFFFFF),
 
     // On colors(text colors)
-    onBackground: Color(0XFFFFD205),
-    onInverseSurface: Color(0XFFFFD205),
-    onPrimary: Color(0XFF232323),
-    onPrimaryContainer: Color(0XFFFFD205),
-    onSecondary: Color(0XFFFFD205),
-    onSecondaryContainer: Color(0XFF232323),
-    onTertiary: Color(0XFFFFD205),
-    onTertiaryContainer: Color(0XFF232323),
+    onBackground: Color(0XFF0B5992),
+    onInverseSurface: Color(0XFF0B5992),
+    onPrimary: Color(0XFFFFFFFF),
+    onPrimaryContainer: Color(0XFF0B5992),
+    onSecondary: Color(0XFF0B5992),
+    onSecondaryContainer: Color(0XFFFFFFFF),
+    onTertiary: Color(0XFF0B5992),
+    onTertiaryContainer: Color(0XFFFFFFFF),
 
     // Other colors
-    outline: Color(0XFF232323),
-    outlineVariant: Color(0XFF232323),
-    scrim: Color(0XFF232323),
-    shadow: Color(0XFF232323),
+    outline: Color(0XFFFFFFFF),
+    outlineVariant: Color(0XFFFFFFFF),
+    scrim: Color(0XFFFFFFFF),
+    shadow: Color(0XFFFFFFFF),
 
     // Inverse colors
-    inversePrimary: Color(0XFF232323),
-    inverseSurface: Color(0XFF232323),
+    inversePrimary: Color(0XFFFFFFFF),
+    inverseSurface: Color(0XFFFFFFFF),
 
     // Pending colors
-    onSurface: Color(0XFFFFD205),
-    onSurfaceVariant: Color(0XFF232323),
+    onSurface: Color(0XFF0B5992),
+    onSurfaceVariant: Color(0XFFFFFFFF),
   );
 }
 
@@ -205,29 +175,18 @@ class PrimaryColors {
 
   // BlueGray
   Color get blueGray100 => Color(0XFFD9D9D9);
-  Color get blueGray400 => Color(0XFF80869A);
+  Color get blueGray400 => Color(0XFF868686);
   Color get blueGray40001 => Color(0XFF888888);
 
   // Gray
-  Color get gray100 => Color(0XFFEEF3FC);
-  Color get gray300 => Color(0XFFE2E2E2);
-
-  // Green
-  Color get green600 => Color(0XFF35B82A);
-  Color get greenA700 => Color(0XFF10BB21);
-
-  // Indigo
-  Color get indigo60026 => Color(0X263B5999);
-  Color get indigo90019 => Color(0X19062664);
+  Color get gray100 => Color(0XFFFCF5F5);
+  Color get gray10001 => Color(0XFFF4F2F2);
+  Color get gray400 => Color(0XFFC4C4C4);
+  Color get gray50 => Color(0XFFF9F9F9);
 
   // LightBlue
-  Color get lightBlue400 => Color(0XFF2DB3FF);
-
-  // Red
-  Color get red600 => Color(0XFFDD4B39);
-
-  // White
-  Color get whiteA700 => Color(0XFFFFFFFF);
+  Color get lightBlue900 => Color(0XFF0066A0);
+  Color get lightBlue90001 => Color(0XFF0067A0);
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

@@ -1,4 +1,4 @@
-import 'package:bharat_app/core/app_export.dart';
+import 'package:e_farm/core/app_export.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -32,8 +32,8 @@ class AppbarImage1 extends StatelessWidget {
         child: CustomImageView(
           svgPath: svgPath,
           imagePath: imagePath,
-          height: 22.adaptSize,
-          width: 22.adaptSize,
+          height: 3.v,
+          width: 40.h,
           fit: BoxFit.contain,
         ),
       ),

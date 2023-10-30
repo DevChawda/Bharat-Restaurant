@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,20 +43,38 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBHFhIs0m9eURiE-vCDGch6YrkpC8s3XuE',
+    appId: '1:396011930229:web:0a40710d6d362758d96e3c',
+    messagingSenderId: '396011930229',
+    projectId: 'e-farm-3b67d',
+    authDomain: 'e-farm-3b67d.firebaseapp.com',
+    storageBucket: 'e-farm-3b67d.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCX1uzmgx-6Rdu6wRIWGx7B_xSZB6ntkvQ',
-    appId: '1:199531564704:android:21c6cb6b3a1b262ae543c5',
-    messagingSenderId: '199531564704',
-    projectId: 'bharat-app-3d928',
-    storageBucket: 'bharat-app-3d928.appspot.com',
+    apiKey: 'AIzaSyD3qaqB4PIRUJUAAs4luzdR3llwFt2U_6g',
+    appId: '1:396011930229:android:5cc61cdabd7d4d73d96e3c',
+    messagingSenderId: '396011930229',
+    projectId: 'e-farm-3b67d',
+    storageBucket: 'e-farm-3b67d.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA2xWTqqM54yyIMfDXXPdexHVxkBM6zANY',
-    appId: '1:199531564704:ios:7ab27dfba3052eb9e543c5',
-    messagingSenderId: '199531564704',
-    projectId: 'bharat-app-3d928',
-    storageBucket: 'bharat-app-3d928.appspot.com',
-    iosBundleId: 'com.bharatapp.app',
+    apiKey: 'AIzaSyBV6K990rtYBDdZi-5xKPYA89zYIclNW3s',
+    appId: '1:396011930229:ios:0546aec7fe61f762d96e3c',
+    messagingSenderId: '396011930229',
+    projectId: 'e-farm-3b67d',
+    storageBucket: 'e-farm-3b67d.appspot.com',
+    iosBundleId: 'com.efarm.app',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBV6K990rtYBDdZi-5xKPYA89zYIclNW3s',
+    appId: '1:396011930229:ios:4e98f861fca720a4d96e3c',
+    messagingSenderId: '396011930229',
+    projectId: 'e-farm-3b67d',
+    storageBucket: 'e-farm-3b67d.appspot.com',
+    iosBundleId: 'e-fa',
   );
 }

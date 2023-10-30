@@ -1,11 +1,11 @@
+import 'package:e_farm/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+// ignore: unused_import
 import 'package:flutter/scheduler.dart';
-import 'package:bharat_app/theme/theme_helper.dart';
-import 'package:bharat_app/routes/app_routes.dart';
-import 'package:firebase_core/firebase_core.dart';
-
-import 'firebase_options.dart';
+import 'package:e_farm/theme/theme_helper.dart';
+import 'package:e_farm/routes/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,9 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      title: 'bharat_app',
+      title: 'e_farm',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.welcomeScreen,
+      initialRoute: AppRoutes.firstpageScreen,
       routes: AppRoutes.routes,
     );
   }

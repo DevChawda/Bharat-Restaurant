@@ -1,55 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:bharat_app/core/app_export.dart';
+import 'package:e_farm/core/app_export.dart';
 
 class AppDecoration {
   // Fill decorations
-  static BoxDecoration get fillGreenA => BoxDecoration(
-        color: appTheme.greenA700,
+  static BoxDecoration get fillBackground => BoxDecoration(
+        color: theme.colorScheme.background,
+      );
+  static BoxDecoration get fillBlueGray => BoxDecoration(
+        color: appTheme.blueGray100,
+      );
+  static BoxDecoration get fillGray => BoxDecoration(
+        color: appTheme.gray50,
+      );
+  static BoxDecoration get fillGray10001 => BoxDecoration(
+        color: appTheme.gray10001,
+      );
+  static BoxDecoration get fillOnPrimary => BoxDecoration(
+        color: theme.colorScheme.onPrimary,
       );
   static BoxDecoration get fillPrimary => BoxDecoration(
         color: theme.colorScheme.primary,
       );
-  static BoxDecoration get fillWhiteA => BoxDecoration(
-        color: appTheme.whiteA700,
+
+  // Gradient decorations
+  static BoxDecoration get gradientLightBlueToOnPrimary => BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment(0.5, 0),
+          end: Alignment(0.5, 1),
+          colors: [
+            appTheme.lightBlue90001,
+            theme.colorScheme.onPrimary.withOpacity(0),
+          ],
+        ),
+      );
+  static BoxDecoration get gradientLightblue900ToOnPrimary => BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment(0.5, 0),
+          end: Alignment(0.5, 1),
+          colors: [
+            appTheme.lightBlue900,
+            theme.colorScheme.onPrimary.withOpacity(0),
+          ],
+        ),
       );
 
   // Outline decorations
   static BoxDecoration get outlineGray => BoxDecoration(
         border: Border.all(
-          color: appTheme.gray300,
+          color: appTheme.gray400,
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlineGray300 => BoxDecoration();
-  static BoxDecoration get outlineIndigo => BoxDecoration(
-        color: appTheme.whiteA700,
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.indigo90019,
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
-            offset: Offset(
-              0,
-              4,
-            ),
-          ),
-        ],
-      );
-
-  // Shadow decorations
-  static BoxDecoration get shadow => BoxDecoration(
-        color: appTheme.whiteA700,
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.indigo60026,
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
-            offset: Offset(
-              0,
-              10,
-            ),
-          ),
-        ],
+  static BoxDecoration get outlineGray400 => BoxDecoration(
+        color: theme.colorScheme.onPrimary,
+        border: Border.all(
+          color: appTheme.gray400,
+          width: 1.h,
+        ),
       );
 }
 
@@ -58,13 +65,33 @@ class BorderRadiusStyle {
   static BorderRadius get circleBorder16 => BorderRadius.circular(
         16.h,
       );
-  static BorderRadius get circleBorder27 => BorderRadius.circular(
-        27.h,
+  static BorderRadius get circleBorder51 => BorderRadius.circular(
+        51.h,
+      );
+  static BorderRadius get circleBorder83 => BorderRadius.circular(
+        83.h,
+      );
+
+  // Custom borders
+  static BorderRadius get customBorderTL30 => BorderRadius.vertical(
+        top: Radius.circular(30.h),
       );
 
   // Rounded borders
-  static BorderRadius get roundedBorder12 => BorderRadius.circular(
-        12.h,
+  static BorderRadius get roundedBorder11 => BorderRadius.circular(
+        11.h,
+      );
+  static BorderRadius get roundedBorder20 => BorderRadius.circular(
+        20.h,
+      );
+  static BorderRadius get roundedBorder30 => BorderRadius.circular(
+        30.h,
+      );
+  static BorderRadius get roundedBorder79 => BorderRadius.circular(
+        79.h,
+      );
+  static BorderRadius get roundedBorder8 => BorderRadius.circular(
+        8.h,
       );
 }
 

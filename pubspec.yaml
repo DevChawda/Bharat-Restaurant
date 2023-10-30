@@ -1,4 +1,4 @@
-name: bharat_app
+name: e_farm
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
@@ -8,9 +8,7 @@ dependencies:
     sdk: flutter
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
-  dotted_border: 2.0.0+3
   intl: ^0.18.0
-  firebase_core: ^2.19.0
   firebase_auth: ^4.11.1
 dev_dependencies: 
   flutter_test: 
@@ -21,7 +19,25 @@ flutter:
     - assets/
     - assets/images/
   fonts: 
+    - family: Inter
+      fonts: 
+        - asset: assets/fonts/InterBold.ttf
+          weight: 700
+        - asset: assets/fonts/InterLight.ttf
+          weight: 300
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterExtraBold.ttf
+          weight: 800
     - family: Roboto
       fonts: 
-        - asset: assets/fonts/RobotoRomanRegular.ttf
+        - asset: assets/fonts/RobotoRegular.ttf
           weight: 400
+        - asset: assets/fonts/RobotoRomanLight.ttf
+          weight: 300
+    - family: Roboto Condensed
+      fonts: 
+        - asset: assets/fonts/RobotoCondensedMedium.ttf
+          weight: 500

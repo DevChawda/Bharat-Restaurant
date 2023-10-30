@@ -1,4 +1,4 @@
-import 'package:bharat_app/core/app_export.dart';
+import 'package:e_farm/core/app_export.dart';
 import 'package:flutter/material.dart';
 
 class AppNavigationScreen extends StatelessWidget {
@@ -9,11 +9,12 @@ class AppNavigationScreen extends StatelessWidget {
     mediaQueryData = MediaQuery.of(context);
     return SafeArea(
         child: Scaffold(
+            backgroundColor: theme.colorScheme.background,
             body: SizedBox(
                 width: 375.h,
                 child: Column(children: [
                   Container(
-                      decoration: AppDecoration.fillWhiteA,
+                      decoration: AppDecoration.fillBackground,
                       child: Column(children: [
                         Align(
                             alignment: Alignment.centerLeft,
@@ -48,14 +49,15 @@ class AppNavigationScreen extends StatelessWidget {
                   Expanded(
                       child: SingleChildScrollView(
                           child: Container(
-                              decoration: AppDecoration.fillWhiteA,
+                              decoration: AppDecoration.fillBackground,
                               child: Column(children: [
                                 GestureDetector(
                                     onTap: () {
-                                      onTapWelcome(context);
+                                      onTapFirstpage(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -63,7 +65,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Welcome",
+                                                  child: Text("Firstpage",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -81,10 +83,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapSigninpage(context);
+                                      onTapSignup(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -92,7 +95,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Sign in page",
+                                                  child: Text("sign up",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -110,10 +113,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapSignuppage(context);
+                                      onTapLogin(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -121,7 +125,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Sign up  page",
+                                                  child: Text("login",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -139,10 +143,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapForgotpassword(context);
+                                      onTapHome(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -150,7 +155,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Forgot password",
+                                                  child: Text("Home",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -168,10 +173,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapPassworddone(context);
+                                      onTapTractor(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -179,7 +185,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("password done",
+                                                  child: Text("tractor",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -197,10 +203,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapManuOne(context);
+                                      onTapMachinary(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -208,7 +215,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Manu One",
+                                                  child: Text("machinary",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -226,10 +233,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapProfileContainer(context);
+                                      onTapSeeds(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -237,8 +245,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text(
-                                                      "Profile - Container",
+                                                  child: Text("seeds",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -256,10 +263,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapEditprofile(context);
+                                      onTapLand(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -267,7 +275,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("edit profile",
+                                                  child: Text("Land",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -285,10 +293,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapOrderhistory(context);
+                                      onTapTractorOne(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -296,7 +305,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Order history",
+                                                  child: Text("tractor-One",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -314,10 +323,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapPaymentmethod(context);
+                                      onTapTractorTwo(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -325,7 +335,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("payment method",
+                                                  child: Text("tractor-Two",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -343,10 +353,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapMyAddress(context);
+                                      onTapMachinaryOne(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -354,7 +365,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("My Address",
+                                                  child: Text("Machinary-One",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -372,10 +383,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapAddaddress(context);
+                                      onTapMachinaryTwo(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -383,7 +395,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Add address",
+                                                  child: Text("Machinary-Two",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -401,10 +413,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapFavoriteitems(context);
+                                      onTapSeedsOne(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -412,7 +425,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Favorite items",
+                                                  child: Text("Seeds-One",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -430,10 +443,11 @@ class AppNavigationScreen extends StatelessWidget {
                                         ]))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapAddnewcard(context);
+                                      onTapSeedsTwo(context);
                                     },
                                     child: Container(
-                                        decoration: AppDecoration.fillWhiteA,
+                                        decoration:
+                                            AppDecoration.fillBackground,
                                         child: Column(children: [
                                           Align(
                                               alignment: Alignment.centerLeft,
@@ -441,7 +455,307 @@ class AppNavigationScreen extends StatelessWidget {
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 20.h,
                                                       vertical: 10.v),
-                                                  child: Text("Add new card",
+                                                  child: Text("Seeds-Two",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapLandOne(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("Land-One",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapLandTwo(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("Land-Two",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapSell(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("Sell",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapSellreq(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("Sell-req",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapAccount(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("account",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapProfile(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("profile",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapSettings(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("settings",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapChangepassdone(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("changepassdone",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapChangePass(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("changePass",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color:
+                                                              appTheme.black900,
+                                                          fontSize: 20.fSize,
+                                                          fontFamily: 'Roboto',
+                                                          fontWeight: FontWeight
+                                                              .w400)))),
+                                          SizedBox(height: 5.v),
+                                          Divider(
+                                              height: 1.v,
+                                              thickness: 1.v,
+                                              color: appTheme.blueGray40001)
+                                        ]))),
+                                GestureDetector(
+                                    onTap: () {
+                                      onTapHelp(context);
+                                    },
+                                    child: Container(
+                                        decoration:
+                                            AppDecoration.fillBackground,
+                                        child: Column(children: [
+                                          Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20.h,
+                                                      vertical: 10.v),
+                                                  child: Text("help",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -461,129 +775,219 @@ class AppNavigationScreen extends StatelessWidget {
                 ]))));
   }
 
-  /// Navigates to the welcomeScreen when the action is triggered.
+  /// Navigates to the firstpageScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the welcomeScreen.
-  onTapWelcome(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.welcomeScreen);
+  /// to push the named route for the firstpageScreen.
+  onTapFirstpage(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.firstpageScreen);
   }
 
-  /// Navigates to the signInPageScreen when the action is triggered.
+  /// Navigates to the signUpScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the signInPageScreen.
-  onTapSigninpage(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.signInPageScreen);
+  /// to push the named route for the signUpScreen.
+  onTapSignup(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.signUpScreen);
   }
 
-  /// Navigates to the signUpPageScreen when the action is triggered.
+  /// Navigates to the loginScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the signUpPageScreen.
-  onTapSignuppage(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.signUpPageScreen);
+  /// to push the named route for the loginScreen.
+  onTapLogin(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.loginScreen);
   }
 
-  /// Navigates to the forgotPasswordScreen when the action is triggered.
+  /// Navigates to the homeScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the forgotPasswordScreen.
-  onTapForgotpassword(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.forgotPasswordScreen);
+  /// to push the named route for the homeScreen.
+  onTapHome(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.homeScreen);
   }
 
-  /// Navigates to the passwordDoneScreen when the action is triggered.
+  /// Navigates to the tractorScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the passwordDoneScreen.
-  onTapPassworddone(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.passwordDoneScreen);
+  /// to push the named route for the tractorScreen.
+  onTapTractor(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.tractorScreen);
   }
 
-  /// Navigates to the manuOneScreen when the action is triggered.
+  /// Navigates to the machinaryScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the manuOneScreen.
-  onTapManuOne(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.manuOneScreen);
+  /// to push the named route for the machinaryScreen.
+  onTapMachinary(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.machinaryScreen);
   }
 
-  /// Navigates to the profileContainerScreen when the action is triggered.
+  /// Navigates to the seedsScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the profileContainerScreen.
-  onTapProfileContainer(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.profileContainerScreen);
+  /// to push the named route for the seedsScreen.
+  onTapSeeds(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.seedsScreen);
   }
 
-  /// Navigates to the editProfileScreen when the action is triggered.
+  /// Navigates to the landScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the editProfileScreen.
-  onTapEditprofile(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.editProfileScreen);
+  /// to push the named route for the landScreen.
+  onTapLand(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.landScreen);
   }
 
-  /// Navigates to the orderHistoryScreen when the action is triggered.
+  /// Navigates to the tractorOneScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the orderHistoryScreen.
-  onTapOrderhistory(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.orderHistoryScreen);
+  /// to push the named route for the tractorOneScreen.
+  onTapTractorOne(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.tractorOneScreen);
   }
 
-  /// Navigates to the paymentMethodScreen when the action is triggered.
+  /// Navigates to the tractorTwoScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the paymentMethodScreen.
-  onTapPaymentmethod(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.paymentMethodScreen);
+  /// to push the named route for the tractorTwoScreen.
+  onTapTractorTwo(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.tractorTwoScreen);
   }
 
-  /// Navigates to the myAddressScreen when the action is triggered.
+  /// Navigates to the machinaryOneScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the myAddressScreen.
-  onTapMyAddress(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.myAddressScreen);
+  /// to push the named route for the machinaryOneScreen.
+  onTapMachinaryOne(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.machinaryOneScreen);
   }
 
-  /// Navigates to the addAddressScreen when the action is triggered.
+  /// Navigates to the machinaryTwoScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the addAddressScreen.
-  onTapAddaddress(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.addAddressScreen);
+  /// to push the named route for the machinaryTwoScreen.
+  onTapMachinaryTwo(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.machinaryTwoScreen);
   }
 
-  /// Navigates to the favoriteItemsScreen when the action is triggered.
+  /// Navigates to the seedsOneScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the favoriteItemsScreen.
-  onTapFavoriteitems(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.favoriteItemsScreen);
+  /// to push the named route for the seedsOneScreen.
+  onTapSeedsOne(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.seedsOneScreen);
   }
 
-  /// Navigates to the addNewCardScreen when the action is triggered.
+  /// Navigates to the seedsTwoScreen when the action is triggered.
   ///
   /// The [BuildContext] parameter is used to build the navigation stack.
   /// When the action is triggered, this function uses the [Navigator] widget
-  /// to push the named route for the addNewCardScreen.
-  onTapAddnewcard(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.addNewCardScreen);
+  /// to push the named route for the seedsTwoScreen.
+  onTapSeedsTwo(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.seedsTwoScreen);
+  }
+
+  /// Navigates to the landOneScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the landOneScreen.
+  onTapLandOne(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.landOneScreen);
+  }
+
+  /// Navigates to the landTwoScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the landTwoScreen.
+  onTapLandTwo(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.landTwoScreen);
+  }
+
+  /// Navigates to the sellScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the sellScreen.
+  onTapSell(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.sellScreen);
+  }
+
+  /// Navigates to the sellReqScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the sellReqScreen.
+  onTapSellreq(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.sellReqScreen);
+  }
+
+  /// Navigates to the accountScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the accountScreen.
+  onTapAccount(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.accountScreen);
+  }
+
+  /// Navigates to the profileScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the profileScreen.
+  onTapProfile(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.profileScreen);
+  }
+
+  /// Navigates to the settingsScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the settingsScreen.
+  onTapSettings(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.settingsScreen);
+  }
+
+  /// Navigates to the changepassdoneScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the changepassdoneScreen.
+  onTapChangepassdone(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.changepassdoneScreen);
+  }
+
+  /// Navigates to the changepassScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the changepassScreen.
+  onTapChangePass(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.changepassScreen);
+  }
+
+  /// Navigates to the helpScreen when the action is triggered.
+  ///
+  /// The [BuildContext] parameter is used to build the navigation stack.
+  /// When the action is triggered, this function uses the [Navigator] widget
+  /// to push the named route for the helpScreen.
+  onTapHelp(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.helpScreen);
   }
 }

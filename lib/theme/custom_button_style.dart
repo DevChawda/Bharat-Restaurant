@@ -1,18 +1,15 @@
 import 'dart:ui';
-import 'package:bharat_app/core/app_export.dart';
+import 'package:e_farm/core/app_export.dart';
 import 'package:flutter/material.dart';
 
 /// A class that offers pre-defined button styles for customizing button appearance.
 class CustomButtonStyles {
   // Filled button style
-  static ButtonStyle get fillGray => ElevatedButton.styleFrom(
-        backgroundColor: appTheme.gray100,
+  static ButtonStyle get fillPrimaryTL20 => ElevatedButton.styleFrom(
+        backgroundColor: theme.colorScheme.primary,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(28.h),
+          borderRadius: BorderRadius.circular(20.h),
         ),
-      );
-  static ButtonStyle get fillWhiteA => ElevatedButton.styleFrom(
-        backgroundColor: appTheme.whiteA700,
       );
   // text button style
   static ButtonStyle get none => ButtonStyle(
